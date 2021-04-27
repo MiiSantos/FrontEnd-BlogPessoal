@@ -1,0 +1,32 @@
+.fs-14{
+    font-size: 14pt;
+}
+
+ul.social-media {
+    list-style: none;
+}
+
+ul.social-media li {
+    display: inline;
+    margin: 1px;
+    padding: 5px;
+}
+
+.fab {
+    font-size: 25pt;
+    color: white;
+    padding: 10px;
+}
+
+.fa-instagram:hover {
+    color: rebeccapurple;
+}
+
+.fa-linkedin-in:hover {
+    color: rebeccapurple;
+}
+
+.fa-github-alt:hover{
+    color: rebeccapurple;
+}
+
