@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ElementArrayFinder } from 'protractor';
 import { environment } from 'src/environments/environment.prod';
 import { userLogin } from '../model/userLogin';
-import { usuario } from '../model/usuario';
 import { AuthService } from '../service/auth.service';
 
 @Component({

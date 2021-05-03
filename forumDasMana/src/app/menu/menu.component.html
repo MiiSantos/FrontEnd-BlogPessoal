@@ -1,19 +1,19 @@
 <div>
   <ul class="nav bg-dark mr-auto d-flex align-items-center">
     <li class="nav-item pl-3">
-        <img src="https://i.ibb.co/0nfndqj/1616163630880.jpg" height="40px" width="40px" alt=""
+        <img src="{{foto}}" height="40px" width="40px" alt=""
         class="rounded-circle imf-fluid m-10px">
     </li>
     <li class="nav-item pl-3">
-      <p class="text-white fs-14 m-0" href="#">Nome do Usuário
+      <p class="text-white fs-14 m-0" href="#">Olá, {{nome}}
         <a href=""><i class="fas fa-user-edit"></i></a>
       </p>
     </li>
     <li class="nav-item pl-3">
-      <a class="nav-link disabled fs-14" href="#">Fórum</a>
+      <a class="nav-link disabled fs-14" href="#">Fórum das Manas</a>
     </li>
     <li class="nav-item pl-3 ml-auto">
-      <a class="text-white fs-14 m-0">Sair <i class="fas fa-sign-out-alt pf-3"></i></a>
+      <a (click)='sair()' class="text-white fs-14 mr-3">Sair <i class="fas fa-sign-out-alt pf-3"></i></a>
     </li>
   </ul>
 

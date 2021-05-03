@@ -4,8 +4,13 @@
 
 a {
     cursor: pointer;
+    font-family: 'Comfortaa', cursive;
 }
 
 .fas{
     color: white;
+}
+
+p{
+    font-family: 'Comfortaa', cursive;
 }
