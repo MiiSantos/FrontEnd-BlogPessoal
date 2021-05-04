@@ -2,3 +2,13 @@
 html {
     scroll-behavior: smooth;
 }
+
+h1 {
+    font-size: 50pt;
+    font-family: 'Comfortaa', cursive;
+}
+
+h5{
+    font-size: 18pt;
+    font-family: 'Comfortaa', cursive;
+}

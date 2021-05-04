@@ -3,18 +3,17 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-tema',
+  templateUrl: './tema.component.html',
+  styleUrls: ['./tema.component.css']
 })
-export class HomeComponent implements OnInit {
+export class TemaComponent implements OnInit {
 
   constructor(
     private router: Router
   ) { }
 
   ngOnInit() {
-
     if(environment.token == '') {
       alert('Sua sessão expirou, faça login novamente!')
       this.router.navigate(['/login'])
