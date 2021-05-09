@@ -12,6 +12,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './editar/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './deletar/tema-delete/tema-delete.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { TemaComponent } from './tema/tema.component';
     CadastroComponent,
     LoginComponent,
     HomeComponent,
-    TemaComponent
+    TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent
   ],
   imports: [
     BrowserModule,
