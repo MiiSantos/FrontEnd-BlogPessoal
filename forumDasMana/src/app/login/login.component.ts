@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
       environment.token = this.userLogin.token
       environment.nome = this.userLogin.nome
       environment.foto = this.userLogin.foto
+      environment.id = this.userLogin.id
 
       this.routed.navigate(['/inicio'])
     }, erro => {

@@ -22,6 +22,10 @@ export class AuthService {
     return this.http.post<usuario>('http://localhost:8080/usuario/cadastrar', usuario)
   }
 
+  getByIdUser(id: number): Observable<usuario> {
+      return this.http.get<usuario>(`http://localhost:8080/usuario/${id}`)
+  }
+
   logado() {
     let ok = false
 
