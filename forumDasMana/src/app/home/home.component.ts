@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
 
   getAllTema(){
     this.temaService.getAllTema().subscribe((resp: tema[]) => {
-      this.listaTemas = resp
+      this.listaTemas = resp 
     })
   }
 
