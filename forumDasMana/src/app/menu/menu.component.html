@@ -6,7 +6,7 @@
     </li>
     <li class="nav-item pl-3">
       <p class="text-white fs-14 m-0" href="#">Olá, {{nome}}
-        <a href=""><i class="fas fa-user-edit"></i></a>
+        <a [routerLink]="['/user-edit', id]"><i class="fas fa-user-edit"></i></a>
       </p>
     </li>
     <li class="nav-item pl-3">
@@ -16,6 +16,4 @@
       <a (click)='sair()' class="text-white fs-14 mr-3">Sair <i class="fas fa-sign-out-alt pf-3"></i></a>
     </li>
   </ul>
-
-
 </div>
