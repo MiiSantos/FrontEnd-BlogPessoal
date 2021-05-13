@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common'; /* scroll da tela */
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { OrderModule } from 'ngx-order-pipe';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -19,8 +20,6 @@ import { PostagemEditComponent } from './editar/postagem-edit/postagem-edit.comp
 import { PostagemDeleteComponent } from './deletar/postagem-delete/postagem-delete.component';
 import { UserEditComponent } from './editar/user-edit/user-edit.component';
 import { AlertaComponent } from './alerta/alerta.component';
-
-
 
 @NgModule({
   declarations: [
@@ -43,7 +42,8 @@ import { AlertaComponent } from './alerta/alerta.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    OrderModule
   ],
   providers: [{
     provide: LocationStrategy, 

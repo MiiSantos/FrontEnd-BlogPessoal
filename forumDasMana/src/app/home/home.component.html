@@ -81,7 +81,7 @@
       role="tabpanel"
       aria-labelledby="nav-todasPostagens-tab"
     >
-      <div *ngFor="let item of listaPostagem" class="card mb-3">
+      <div *ngFor="let item of listaPostagem | orderBy : key : reverse" class="card mb-3">
         <div class="card-header">
           <h5>{{ item.titulo }}</h5>
           <small class="text-muted"> Tema: {{ item.tema.descricao }}</small>
@@ -107,7 +107,7 @@
       role="tabpanel"
       aria-labelledby="minhasPostagens-tab"
     >
-      <div *ngFor="let item of usuario.postagem" class="card mb-3">
+      <div *ngFor="let item of usuario.postagem | orderBy : key : reverse" class="card mb-3">
         <div class="card-header">
           <h5>{{ item.titulo }}</h5>
           <small class="text-muted"> Tema: {{ item.tema.descricao }}</small>
@@ -145,7 +145,7 @@
       aria-labelledby="temas-tab"
     >
       <div class="card-columns" *ngFor="let tema of listaTemas">
-        <div class="card text-center" *ngFor="let item of tema.postagem">
+        <div class="card text-center" *ngFor="let item of tema.postagem | orderBy : key : reverse">
           <div class="card-body">
             <h5 class="card-title">{{ item.titulo }}</h5>
             <p class="card-text">{{ item.texto }}</p>
