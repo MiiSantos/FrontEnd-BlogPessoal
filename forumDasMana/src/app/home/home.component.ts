@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
@@ -18,10 +19,12 @@ export class HomeComponent implements OnInit {
 
   postagem: postagem = new postagem()
   listaPostagem: postagem[]
+  tituloPost: string
 
   tema: tema = new tema()
   listaTemas: tema[] 
   idTema: number
+  nomeTema: string
 
   usuario: usuario = new usuario()
   idUser = environment.id
@@ -86,7 +89,27 @@ export class HomeComponent implements OnInit {
       this.alerta.showAlertSuccess('Postagem publicada com sucesso!')
       this.postagem = new postagem()
       this.getAllPostagens()
-    })
-    
+    })  
+  }
+
+  findByTituloPost() {
+
+    if(this.tituloPost == '') {
+      this.getAllPostagens()
+    } else {
+      this.postagemService.getByTituloPost(this.tituloPost).subscribe((resp: postagem[]) => {
+        this.listaPostagem = resp
+      })
+    }   
+  }
+
+  findByNomeTema() {
+    if(this.nomeTema == '') {
+      this.getAllTema()
+    } else {
+      this.temaService.getByNomeTema(this.nomeTema).subscribe((resp: tema[]) => {
+        this.listaTemas = resp
+      })
+    }
   }
 }

@@ -81,6 +81,16 @@
       role="tabpanel"
       aria-labelledby="nav-todasPostagens-tab"
     >
+
+    <!-- barra de pesquisa -->
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <div class="form-group mb-5">
+          <input class="form-control" type="text" id="titulo" placeholder="Pesquise por um título" [(ngModel)]="tituloPost" (keyup)='findByTituloPost()'>
+        </div>
+      </div>
+    </div>
+
       <div *ngFor="let item of listaPostagem | orderBy : key : reverse" class="card mb-3">
         <div class="card-header">
           <h5>{{ item.titulo }}</h5>
@@ -107,6 +117,7 @@
       role="tabpanel"
       aria-labelledby="minhasPostagens-tab"
     >
+
       <div *ngFor="let item of usuario.postagem | orderBy : key : reverse" class="card mb-3">
         <div class="card-header">
           <h5>{{ item.titulo }}</h5>
@@ -144,6 +155,16 @@
       role="tabpanel"
       aria-labelledby="temas-tab"
     >
+    
+     <!-- barra de pesquisa -->
+     <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <div class="form-group mb-5">
+          <input class="form-control" type="text" id="nome" placeholder="Pesquise por um tema" [(ngModel)]="nomeTema" (keyup)='findByNomeTema()'>
+        </div>
+      </div>
+    </div>
+
       <div class="card-columns" *ngFor="let tema of listaTemas">
         <div class="card text-center" *ngFor="let item of tema.postagem | orderBy : key : reverse">
           <div class="card-body">
