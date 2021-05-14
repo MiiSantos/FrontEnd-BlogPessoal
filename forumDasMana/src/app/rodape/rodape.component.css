@@ -1,32 +1,38 @@
-.fs-14{
-    font-size: 14pt;
-}
-
 ul.social-media {
     list-style: none;
 }
 
 ul.social-media li {
     display: inline;
-    margin: 1px;
-    padding: 5px;
 }
 
 .fab {
     font-size: 25pt;
     color: white;
-    padding: 10px;
 }
 
 .fa-instagram:hover {
-    color: rebeccapurple;
+    color: #BF0426;
 }
 
 .fa-linkedin-in:hover {
-    color: rebeccapurple;
+    color: #BF0426;
 }
 
 .fa-github-alt:hover{
-    color: rebeccapurple;
+    color: #BF0426;
+}
+
+footer {
+    background-color: #09030D;
+    font-family: 'Cinzel', serif;
+}
+
+.texto {
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
 }
 

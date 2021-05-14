@@ -4,7 +4,9 @@
 
 a {
     cursor: pointer;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .fas{
@@ -12,5 +14,10 @@ a {
 }
 
 p{
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+.nav {
+    background-color: #09030D;
 }

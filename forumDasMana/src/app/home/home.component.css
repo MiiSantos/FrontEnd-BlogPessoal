@@ -1,4 +1,57 @@
 .nav-item {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Newsreader', serif;
     font-weight: bold;
+}
+
+.nav-link {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #8C7A64;
+    font-size: 20px;
+}
+
+.container-fluid {
+    background-color: #09030D;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+}
+
+.container {
+    font-family: 'Cinzel', serif;
+}
+
+h5 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+}
+
+h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+.modal {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
 }

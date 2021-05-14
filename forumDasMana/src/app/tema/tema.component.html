@@ -2,7 +2,7 @@
     <div class="row bg-secondary">
         <div class="col-md-12 text-white">
             <a routerLink="/inicio" class="text-white text-left">
-                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <i class="fa fa-arrow-left p-3" aria-hidden="true"></i>
                 Início
             </a>
 
@@ -44,8 +44,8 @@
                     <th scope="row">{{item.id}}</th>
                     <td>{{item.descricao}}</td>
                     <td class="d-flex justify-content-end">
-                      <button [routerLink]="['/editar', item.id]" class="btn btn-info mr-3">Editar</button>
-                      <button [routerLink]="['/deletar', item.id]" class="btn btn-danger">Apagar</button>
+                      <button [routerLink]="['/editar', item.id]" class="btn btn-outline-info mr-3">Editar</button>
+                      <button [routerLink]="['/deletar', item.id]" class="btn btn-outline-danger">Apagar</button>
                     </td>
                   </tr>
                 </tbody>

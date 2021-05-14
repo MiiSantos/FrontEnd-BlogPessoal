@@ -1,19 +1,19 @@
 <div>
-  <ul class="nav bg-dark mr-auto d-flex align-items-center">
-    <li class="nav-item pl-3">
+  <ul class="nav mr-auto d-flex align-items-center">
+    <li class="nav-item p-2">
         <img src='{{foto}}' height="40px" width="40px" alt=""
         class="rounded-circle imf-fluid m-10px">
     </li>
     <li class="nav-item pl-3">
-      <p class="text-white fs-14 m-0" href="#">Olá, {{nome}}
+      <p class="text-white m-0" href="#">Olá, {{nome}}
         <a [routerLink]="['/user-edit', id]"><i class="fas fa-user-edit"></i></a>
       </p>
     </li>
     <li class="nav-item pl-3">
-      <a class="nav-link disabled fs-14" href="#">Fórum das Manas</a>
+      <a class="nav-link disabled text-secondary mr-5" href="#">Fórum das Manas</a>
     </li>
     <li class="nav-item pl-3 ml-auto">
-      <a (click)='sair()' class="text-white fs-14 mr-3">Sair <i class="fas fa-sign-out-alt pf-3"></i></a>
+      <a (click)='sair()' class="text-white mr-3">Sair <i class="fas fa-sign-out-alt pf-3"></i></a>
     </li>
   </ul>
 </div>

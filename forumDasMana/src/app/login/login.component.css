@@ -1,5 +1,27 @@
 #img-bg {
-    background-image: url('https://i.ibb.co/djbkn1c/lemon.jpg');
+    background-image: url('https://i.ibb.co/PY2z1RW/herbs-5659780-960-720.jpg');
     min-height: 695px;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid {
+    background-color: #09030D;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
 }
